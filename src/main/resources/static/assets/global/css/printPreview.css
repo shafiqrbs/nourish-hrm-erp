@@ -1,0 +1,37 @@
+.printHeader{
+    color:blue;
+}
+
+/* footer, header - position: fixed */
+.printHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.printFooter {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body {
+  font: 12pt Georgia, "Times New Roman", Times, serif;
+  line-height: 1.3;
+  padding-top: 100px;
+}
+
+@page {
+    /* switch to landscape */
+   size: portrait;
+
+   /* set page margins */
+   margin: 0.5cm;
+   @bottom-right {
+     content: counter(page) " of " counter(pages);
+  }
+}

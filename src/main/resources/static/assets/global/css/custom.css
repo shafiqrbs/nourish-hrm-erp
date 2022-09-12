@@ -1,0 +1,373 @@
+
+
+/*================ Custom checkbox style =============================*/
+      /* The container */
+      .container {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 22px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+      }
+
+      /* Hide the browser's default checkbox */
+      .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+      }
+
+      /* Create a custom checkbox */
+      .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 22px;
+          width: 22px;
+          background-color: #eee;
+          border:1px solid #d2d6de;
+      }
+
+      /* On mouse-over, add a grey background color */
+      .container:hover input ~ .checkmark {
+          background-color: #fff;
+          border:2px solid #2196F3;
+      }
+
+      /* When the checkbox is checked, add a blue background */
+      .container input:checked ~ .checkmark {
+          background-color: #2196F3;
+          border:none;
+      }
+
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+      }
+
+      /* Show the checkmark when checked */
+      .container input:checked ~ .checkmark:after {
+          display: block;
+      }
+
+      /* Style the checkmark/indicator */
+      .container .checkmark:after {
+          left: 9px;
+          top: 5px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+      }
+
+      .modal-content div.rounded{
+          padding: 0 1rem !important;
+      }
+
+      .modal-hd{
+          background-color: #0084ff !important;
+          margin-bottom: 18px;
+      }
+
+      .modal-close-btn{
+         background-color: #fa625e;
+         color: #FFFFFF !important;
+         padding:0 5px !important;
+      }
+
+      .modal-button{
+         padding-right: 1px !important;
+      }
+
+      .modal-heading{
+         color: #FFFFFF !important;
+         font-weight:bold;
+         padding-left: 4px;
+      }
+
+      .modal-backdrop.fade{
+         opacity:.4 !important;
+      }
+
+      .required .control-label:after {
+         content:"*";color:red;
+       }
+      /*=====================================
+        2-10-18 custom css all pages
+      =======================================*/
+    .k-pager-wrap>.k-link>.k-icon {
+        margin-top: 11px;
+    }
+    .k-state-default>.k-select {
+        margin-top: 2px;
+    }
+    .k-dropdown-wrap .k-input, .k-numeric-wrap .k-input, .k-picker-wrap .k-input {
+        margin-top: 4px;
+    }
+    select.form-control-sm, .form-control-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-append > .btn, .input-group-sm > .input-group-append > .input-group-text, .input-group-sm > .input-group-prepend > .btn, .input-group-sm > .input-group-prepend > .input-group-text {
+        padding: .15rem .5rem;
+        font-size: .7rem;
+        background: #f9f9f9;
+    }
+    .customUi-checkbox.checkboxUi-primary label .label-checkbox:before {
+        border-color: #94df4a;
+    }
+    .customUi-checkbox label .label-checkbox:before {
+        opacity: 1;
+    }
+    .digital-sign-photo, .company-logo {
+        min-height: 143px;
+    }
+    .employee-photo {
+        width: auto;
+        border: 1px dotted #1681f4;
+        margin: auto;
+        margin-top: 10px;
+        position: relative;
+        height: auto;
+        display: table;
+    }
+    .digital-sign-photo, .company-logo {
+        max-width: 234px;
+        height: auto;
+
+    }
+    .digital-sign-photo, .company-logo {
+        min-height: auto;
+    }
+    .digital-sign-photo .btn, .company-logo .btn {
+        width: auto;
+        height: auto;
+    }
+    .employee-photo .btn {
+        width: auto;
+        height: auto;
+    }
+.image-overly.btn-group a i {
+    font-size: 11px;
+    padding: 4px;
+}
+.select-dynamic-add .add-new {
+    width: 17px !important;
+    height: 17px !important;
+    font-size: 10px !important;
+}
+.nav-link {
+    display: block;
+    padding: 4px 10px;
+}
+.mtt0 .k-pager-wrap>.k-link>.k-icon {
+    margin-top: 0 !important;
+}
+.mtt0 .k-pager-wrap .k-pager-numbers .k-state-selected {
+    margin-top: -18px;
+}
+.mtt0 .k-pager-wrap {
+    padding: 18px 0;
+}
+.company-logo {
+    min-height: 232px;
+}
+a.btn-action-new{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+a.btn.btn-gradient-success.btn-icon-o.btn-action-new i {
+    font-size: 13px;
+}
+.box-footer.clearfix {
+    z-index: 99999;
+    text-align: right;
+}
+.box-footer .btn {
+    background: #0084ff;
+    background: #0084ff;
+    border: none;
+}
+.content-footer {
+    border-top: 1px solid #e1eaea;
+    border-color: #e1eaea !important;
+    margin-top: 20px;
+}
+.alert.alert-dismissible.alertIn.alertOut.custom-class.alert-success {
+    top: 0;
+    position: fixed;
+    height: 60px;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    text-align: center;
+}
+
+.alert-dismissable .close, .alert-dismissible .close{
+    height: 0 !important;
+    padding: 0 !important;
+}
+
+.alert {
+    padding: 15px;
+    border: 1px solid transparent;
+    bottom: auto !important;
+    top: 0 !important;
+    right: 0;
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    text-align: center;
+}
+
+.bgwhite{
+    background: white;
+}
+.darkNav .app-logo {
+    background-color: black;
+    color: #fff;
+}
+.k-grid td {
+    padding: 0px 10px !important;
+    font-size: 11px;
+}
+.k-filter-row th, .k-grid-header th.k-header {
+    padding: .3em .3em .3em .3em;
+    font-weight: 300;
+    font-size: 12px;
+}
+.modal-close-btn {
+    background-color: transparent;
+    color: #FFFFFF !important;
+    padding: 5px !important;
+    margin-right: 10px;
+    margin-top: 31px;
+    line-height: 0;
+    top: 10px;
+}
+.modal-heading {
+    color: #FFFFFF !important;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.modal-button {
+    padding-right: 1px !important;
+    margin-top: 10px !important;
+}
+.modal-hd {
+    background-color: #0084ff !important;
+    margin-bottom: 18px;
+    width: 104.2%;
+    margin-left: -16px;
+}
+.modal-dialog .modal-content, .modal-dialog .modal-header {
+    border-color: transparent;
+}
+.k-checkbox:checked+.k-checkbox-label:before {
+    content: "\e118";
+    font-size: 11px;
+    line-height: 11px;
+}
+.broadecare {
+    background: white;
+    padding: 20px;
+}
+.label-input100 {
+    top: 8px;
+}
+.label-input100 {
+    top: 10px;
+}
+
+.ie-skill-matrix{
+    margin:0 !important;
+    padding:0 !important;
+    height:auto;
+}
+
+
+
+.portlet-header input[type='text']{
+    max-width: 170px;
+    height: 24px;
+    font-size: .5rem !important;
+}
+
+
+.portlet-header .input-dynamic-add .add-new{
+    width: 24px !important;
+    height: 24px !important;
+    font-size: .5rem !important;
+}
+
+.portlet-header .header-title{
+    display: inline-block;
+}
+
+.action-btn ul li{
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+
+.action-btn ul li.search{
+    margin-top: 2px;
+}
+
+.toolbar{
+    min-width: 300px !important;
+    display: inline;
+    float: right;
+}
+.toolbar div{
+    display: inline-block;
+}
+
+.form-control-custom{
+    width: 85% !important;
+    display:inline !important;
+}
+
+.header-title h3{
+    font-size: 17px !important;
+}
+
+
+.dep-quick-info .department{
+    display: inline-block;
+}
+
+
+.dep-quick-info{
+    padding: 15px 15px 0 15px;
+}
+
+
+.dep-quick-info h4{
+    font-size: 15px;
+}
+
+.dep-quick-info .list-title,.dep-quick-info .list-content{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+#printPreviewContainer{
+    display:none !important;
+    margin:0;
+    padding:0:
+    height:0;
+    width:0;
+}
